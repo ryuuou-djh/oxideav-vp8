@@ -4,6 +4,15 @@ All notable changes to `oxideav-vp8` are recorded here.
 
 ## [Unreleased]
 
+## [0.2.5](https://github.com/OxideAV/oxideav-vp8/compare/v0.2.4...v0.2.5) - 2026-06-15
+
+### Other
+
+- add panic_free_split_mv_predict (§16.4/§18 whole-MB SPLITMV synthesiser)
+- §15 SIMD kernels — −44% whole-frame keyframe deblock (round 314)
+- refresh to current status, drop per-round changelog cruft
+- automatic §9.7 golden-frame refresh cadence on Vp8InterStreamEncoder
+
 ### Added — `panic_free_split_mv_predict` fuzz target (round 318)
 
 New `cargo fuzz` target driving the §16.4 / §18 whole-MB SPLITMV
